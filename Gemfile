@@ -39,6 +39,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem "shoulda-matchers"
+  gem "rspec-rails", "~> 3.5"
 end
 
 group :development do
@@ -54,7 +56,3 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
-
-group :test, :development do
-  gem "rspec-rails"
-end
